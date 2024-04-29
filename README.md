@@ -27,13 +27,13 @@ This commands includes
 <BR>
 
 
-DEVELOPED BY:N.NAVYA SREE
-REG.NO:212223040138
+DEVELOPED BY:N.NAVYA SREE        
+REG.NO:212223040138          
 
-PROGRAM
-PING COMMAND
+## PROGRAM
+## PING COMMAND
 
-CLIENT
+## CLIENT
 ```
 import socket 
 from pythonping import ping 
@@ -48,7 +48,7 @@ while True:
     except KeyError: 
         c.send("Not Found".encode())
 ```
-SERVER
+## SERVER
 ```
 import socket 
 s=socket.socket() 
@@ -58,7 +58,7 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
 ```
-TRANCEROUTE COMMAND
+## TRANCEROUTE COMMAND
 ```
 from scapy.all import* 
 target = ["www.google.com"] 
@@ -66,15 +66,15 @@ result, unans = traceroute(target,maxttl=32)
 print(result,unans)
 ```
 ## Output
-CLIENT
+## CLIENT
 
 ![image](https://github.com/23004513/4.Execution_of_NetworkCommends/assets/138973069/b53ac2f5-24c7-481c-bc98-cf5db18d2510)
 
-SERVER
+## SERVER
 
 ![image](https://github.com/23004513/4.Execution_of_NetworkCommends/assets/138973069/c09a7fe7-d19b-425f-bcd0-db6570c949a2)
 
-TRANCEROUTE COMMAND
+## TRANCEROUTE COMMAND
 
 ![image](https://github.com/23004513/4.Execution_of_NetworkCommends/assets/138973069/2c9ce9c5-56bf-496f-b39c-86176db284ae)
 
